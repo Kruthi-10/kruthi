@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>pizza form</title>
+    <style>
+        body{
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlPCN6V8MhorF4YSc-DVrJPonBCj8EGYvpyQ&s.jpg');
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position:center;
+            font-size: large;
+            font-variant: small-caps;
+            font-weight: 500;
+        }
+        .order-form{
+            width: auto;
+            margin: auto;
+
+
+        }
+        table {
+            border-collapse: separate;
+            border-spacing: 0 10px;
+        }
+        td {
+            padding: 5px;
+        }
+        input {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <center><h1><i>Pete's Pizza Delivery</i></h1></center>
+    <center><h1>Online Order Form</h1></center><br>
+    <table>
+        <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+            <td><label for="address">Address:</label></td>
+            <td><input type="text" id="address" name="address"></td>
+        </tr>
+        <tr>
+            <td><label for="town">Town's city:</label></td>
+            <td><input type="text" id="town" name="town"></td>
+        </tr>
+        <tr>
+            <td><label for="postcode">Postcode:</label></td>
+            <td><input type="text" id="postcode" name="postcode"></td>
+        </tr>
+        <tr>
+            <td><label for="telephone">Telephone:</label></td>
+            <td><input type="tel" id="telephone" name="telephone"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email"></td>
+        </tr>
+    </table>
+ <h2>Toppings</h2>
+ <div
+class="radio-group">
+<label>
+    <input type="radio" name="topping" value="meat">margherita
+</label>
+<label><input type="radio" name="top" value="four seasons"> four seasons</label>
+<label><input type="radio" name="top" value="meat feast"> meat feast</label>
+  </div>
+  <h2>size</h2>
+  <div
+  class="radio-group">
+  <label><input type="radio" name="small" value="small">small </label>
+  <label><input type="radio" name="med" value="medium">medium </label>
+  <label><input type="radio" name="size" value="large"> large</label>
+  </div>
+  <h2>extras</h2>
+  <div class=checkbox-group">
+<label><input type="checkbox" name="extras" value="green peppers">green peppres</label>
+<label><input type="checkbox"name=extras value="anchovies"> achovies</label>
+<label><input type="checkbox" name="extras" value="extra chesse">extra chesse</label><br><br><br><br>
+</div><br><br>
+<div class=input-field">
+<label for=instructions"><h2>Delivery instructions:</h2></label>
+<textarea name="instructions" id="instructions" rows="4"></textarea>
+</div><br><br>
+<div class=submit-button">
+<input type="submit" value="submit order">
+</div>
+</body>
+</html>
